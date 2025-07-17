@@ -1,0 +1,227 @@
+/**
+ * Admin styles for Resubscribe Controls for WCSubs.
+ */
+
+/* General Admin Styles */
+.rcwcs-admin-wrap {
+  margin: 20px 0;
+}
+
+.rcwcs-admin-wrap .nav-tab-wrapper {
+  margin-bottom: 20px;
+}
+
+.rcwcs-admin-content {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Resubscribe Control Styles */
+.subscription_resubscribe_control .form-field,
+.variable_subscription_resubscribe_control .form-field {
+  padding: 5px 20px 5px 12px !important;
+  margin: 9px 0 !important;
+}
+
+.subscription_resubscribe_control label,
+.variable_subscription_resubscribe_control label {
+  width: 150px !important;
+  margin-right: 10px !important;
+}
+
+.subscription_resubscribe_control .description,
+.variable_subscription_resubscribe_control .description {
+  display: inline-block !important;
+  margin-left: 8px !important;
+  color: #777 !important;
+}
+
+.subscription_resubscribe_control input[type="checkbox"],
+.variable_subscription_resubscribe_control input[type="checkbox"] {
+  margin-right: 8px !important;
+}
+
+/* Email editor styles */
+.wp-editor-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.wp-editor-area {
+  min-height: 200px;
+}
+
+.mce-toolbar .mce-btn-group .mce-btn.mce-listbox {
+  border-radius: 3px;
+}
+
+/* Ensure editor width matches other fields */
+div.wp-editor-wrap {
+  max-width: 95%;
+}
+
+/* Format email editor section */
+#rcwcs_notification_section .form-table th {
+  padding: 20px 10px 20px 0;
+}
+
+/* Give more room for the editor */
+#rcwcs_price_email_content_ifr {
+  min-height: 250px !important;
+}
+
+/* Fix editor height */
+.wp-editor-container textarea.wp-editor-area {
+  min-height: 250px;
+}
+
+/* Product Settings Tab Styles */
+#rcwcs_resubscribe_data {
+  padding: 1em;
+}
+
+#rcwcs_resubscribe_data .form-field {
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
+#rcwcs_resubscribe_data label {
+  display: inline-block;
+  width: 150px;
+  font-weight: 600;
+}
+
+#rcwcs_resubscribe_data .description {
+  display: inline-block;
+  margin-left: 10px;
+  color: #666;
+}
+
+/* Fix for tab display */
+.product_data_tabs .rcwcs_resubscribe_tab a,
+.product_data_tabs .rcwcs_resubscribe a {
+  padding: 5px 8px !important;
+  line-height: 28px !important;
+}
+
+.product_data_tabs .rcwcs_resubscribe_tab.active a,
+.product_data_tabs .rcwcs_resubscribe.active a {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+/* Settings Page Styles */
+.rcwcs-admin-content h2 {
+  font-size: 1.5em;
+  margin: 1em 0;
+  padding: 0 0 0.5em;
+  border-bottom: 1px solid #eee;
+}
+
+/* Rich Editor Styles */
+.rcwcs-admin-content .wp-editor-wrap {
+  margin-bottom: 15px;
+}
+
+.rcwcs-admin-content .mce-toolbar .mce-btn button {
+  padding: 2px 3px;
+}
+
+.rcwcs-admin-content .wp-editor-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.rcwcs-admin-content .wp-editor-area {
+  min-height: 250px !important;
+  border: none;
+}
+
+/* Make room for the rich editor */
+.rcwcs-admin-content .form-table td {
+  padding-bottom: 20px;
+}
+
+/* Editor Placeholder Text */
+.rcwcs-placeholder-help {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.rcwcs-placeholder-help code {
+  background: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin: 0 2px;
+  font-size: 12px;
+}
+
+.rcwcs-placeholder-help h4 {
+  margin: 0 0 10px;
+}
+
+.rcwcs-placeholder-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rcwcs-placeholder-item {
+  background: #f0f0f0;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-family: monospace;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.rcwcs-placeholder-item:hover {
+  background: #e0e0e0;
+}
+
+/* Notification Preview Button */
+.rcwcs-preview-button {
+  margin: 10px 0 !important;
+}
+
+/* Analytics Tab */
+.rcwcs-analytics-container {
+  min-height: 400px;
+}
+
+.rcwcs-analytics-loading {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.rcwcs-analytics-error {
+  color: #d63638;
+  background: #fcf0f1;
+  border-left: 4px solid #d63638;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.rcwcs-chart-container {
+  position: relative;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+  .rcwcs-admin-content .form-table td {
+    padding: 15px 10px;
+  }
+
+  .rcwcs-admin-content .wp-editor-wrap {
+    max-width: 100%;
+  }
+}
